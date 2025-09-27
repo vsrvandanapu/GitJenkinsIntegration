@@ -6,7 +6,7 @@ test('Test 1', async ({ page }) => {
   await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
    await page.locator('//input[@name="username"]').fill("Admin");
    await page.locator('//input[@name="password"]').fill("admin123");
-  await page.waitForTimeout(2000);
+  await page.waitForTimeout(5000);
   await page.locator('//button[@type="submit"]').click()
    await page.waitForTimeout(2000);
   console.log("Ending Test 1 ");});
